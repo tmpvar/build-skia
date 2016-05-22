@@ -1,8 +1,4 @@
-vars = {
-  "skia_revision": "a6a8f00a3977e71dbce9da50a32c5e9a51c49285",
-}
-
 deps = {
   "src/third_party/skia/":
-      "http://skia.googlesource.com/skia.git@" + Var("skia_revision"),
+      "https://github.com/tmpvar/skia.cc@6e36ba7bf19cc7597837bb0416882ad4d699916b"),
 }
