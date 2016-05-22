@@ -4,3 +4,12 @@ deps = {
   "tools/gyp":
       "git+https://chromium.googlesource.com/external/gyp"
 }
+
+hooks = [
+  {
+    # A change to a .gyp, .gypi or to GYP itself should run the generator.
+    "name": "gyp",
+    "pattern": ".",
+    "action": ["python", "src/bin/gyp_build_skia"]
+  }
+]
